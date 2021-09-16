@@ -46,10 +46,10 @@ function checkDB() {
 }
 
 request.onsuccess = function (e) {
-  console.log("request successful ");
+  console.log("request successful");
   db = e.target.result;
   if (navigator.onLine) {
-    console.log("Server reachable");
+    console.log("server online");
     checkDB();
   }
 };
